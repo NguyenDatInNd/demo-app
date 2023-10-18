@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "demo-app"
+client_id = "ef99982d1932303d8847b87b5fa51fbb"
+application_url = "https://employees-architects-gamma-chris.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://employees-architects-gamma-chris.trycloudflare.com/auth/callback",
+  "https://employees-architects-gamma-chris.trycloudflare.com/auth/shopify/callback",
+  "https://employees-architects-gamma-chris.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "quickstart-e80855e1.myshopify.com"
